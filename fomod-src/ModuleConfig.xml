@@ -1,0 +1,53 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://qconsulting.ca/fo3/ModConfig5.0.xsd">
+  <moduleName>Odin - Mysticism - Adamant Compatibility Patch</moduleName>
+  <installSteps order="Explicit">
+    <installStep name="Compatibility Patches">
+      <optionalFileGroups order="Explicit">
+        <group name="Main Patch" type="SelectAtMostOne">
+          <plugins order="Explicit">
+            <plugin name="Odin - Mysticism - Adamant Patch (ESL)">
+              <description>Comprehensive compatibility patch for Odin, Mysticism, and Adamant.
+
+Features:
+- Restores Simonrim &amp; Adamant perk hook effects (MAG_PerkResolve, reanimate bonuses, cloak perks, Dragonhide hooks) on all 353 conflicting vanilla records.
+- Deduplicates spell tomes from vendor and loot distribution (removes 17 duplicate spells from Odin's runtime injection formlists).
+- Forwards Simonrim keywords (Sun damage, Poison damage, Circle spells) to Odin's unique spells for full perk scaling.
+- Flagged as ESL (0 load order slots).
+
+Auto-Detection Status:
+This option is automatically checked (Recommended) if Odin, Mysticism, and Adamant are active in your load order.
+
+Required Masters &amp; Versions:
+- Odin - Skyrim Magic Overhaul.esp (v3.2.0+)
+- MysticismMagic.esp (v2.5.0+)
+- Adamant.esp (v6.0.4+)
+- Skyrim.esm
+- Update.esm
+- Dawnguard.esm
+- HearthFires.esm
+- Dragonborn.esm</description>
+              <files>
+                <folder source="00 Core" destination="" priority="0"/>
+              </files>
+              <typeDescriptor>
+                <dependencyType>
+                  <defaultType name="NotUsable"/>
+                  <patterns>
+                    <pattern>
+                      <dependencies operator="And">
+                        <fileDependency file="Odin - Skyrim Magic Overhaul.esp" state="Active"/>
+                        <fileDependency file="MysticismMagic.esp" state="Active"/>
+                        <fileDependency file="Adamant.esp" state="Active"/>
+                      </dependencies>
+                      <type name="Recommended"/>
+                    </pattern>
+                  </patterns>
+                </dependencyType>
+              </typeDescriptor>
+            </plugin>
+          </plugins>
+        </group>
+      </optionalFileGroups>
+    </installStep>
+  </installSteps>
+</config>

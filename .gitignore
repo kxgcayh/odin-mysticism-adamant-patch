@@ -1,0 +1,11 @@
+build/
+dist/
+_research/
+inputs/
+.DS_Store
+*.zip
+*.esp
+__pycache__/
+*.pyc
+KNOWLEDGEBASE*
+*.local.md

@@ -1,0 +1,7 @@
+<fomod>
+  <Name>Odin - Mysticism - Adamant Compatibility Patch</Name>
+  <Author>kxgcayh</Author>
+  <Version>1.0.0</Version>
+  <Description>Auto-detecting FOMOD installer for the Odin, Mysticism, and Adamant compatibility patch. Built for the latest versions: Odin 3.2.0+, Mysticism 2.5.0+, and Adamant 6.0.4+.</Description>
+  <Website>https://github.com/kxgcayh/odin-mysticism-adamant-patch.git</Website>
+</fomod>

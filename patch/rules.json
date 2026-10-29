@@ -1,0 +1,36 @@
+{
+  "expected_overlapping_vanilla_overrides": 353,
+  "expected_pruned_formlists": 24,
+  "expected_patched_spells": 10,
+  "duplicate_books_to_prune": [
+    "199C45:Odin - Skyrim Magic Overhaul.esp",
+    "199C43:Odin - Skyrim Magic Overhaul.esp",
+    "199C44:Odin - Skyrim Magic Overhaul.esp",
+    "199C46:Odin - Skyrim Magic Overhaul.esp",
+    "20AFD0:Odin - Skyrim Magic Overhaul.esp",
+    "233858:Odin - Skyrim Magic Overhaul.esp",
+    "233857:Odin - Skyrim Magic Overhaul.esp",
+    "26B451:Odin - Skyrim Magic Overhaul.esp",
+    "2C16A3:Odin - Skyrim Magic Overhaul.esp",
+    "21F417:Odin - Skyrim Magic Overhaul.esp",
+    "17B5DB:Odin - Skyrim Magic Overhaul.esp",
+    "17B5D7:Odin - Skyrim Magic Overhaul.esp",
+    "27568C:Odin - Skyrim Magic Overhaul.esp",
+    "17B5D8:Odin - Skyrim Magic Overhaul.esp",
+    "1AFD1F:Odin - Skyrim Magic Overhaul.esp",
+    "03DB2C:Odin - Skyrim Magic Overhaul.esp",
+    "2611FA:Odin - Skyrim Magic Overhaul.esp"
+  ],
+  "spell_keyword_additions": {
+    "03EB82:Odin - Skyrim Magic Overhaul.esp": ["ADA002:Update.esm"],
+    "1CC707:Odin - Skyrim Magic Overhaul.esp": ["ADA002:Update.esm"],
+    "1CC6EF:Odin - Skyrim Magic Overhaul.esp": ["ADA002:Update.esm"],
+    "1CC6EB:Odin - Skyrim Magic Overhaul.esp": ["ADA002:Update.esm"],
+    "261216:Odin - Skyrim Magic Overhaul.esp": ["ADA002:Update.esm"],
+    "261217:Odin - Skyrim Magic Overhaul.esp": ["ADA002:Update.esm"],
+    "2611EF:Odin - Skyrim Magic Overhaul.esp": ["ADA001:Update.esm"],
+    "26120E:Odin - Skyrim Magic Overhaul.esp": ["ADA001:Update.esm"],
+    "261211:Odin - Skyrim Magic Overhaul.esp": ["ADA001:Update.esm"],
+    "03EB90:Odin - Skyrim Magic Overhaul.esp": ["487DE8:MysticismMagic.esp"]
+  }
+}

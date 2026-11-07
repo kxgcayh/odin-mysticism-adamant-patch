@@ -1,6 +1,6 @@
 # Building from source
 
-Back to [README.md](README.md). Technical notes and record breakdowns are in [NOTES.md](NOTES.md).
+Back to [README.md](README.md).
 
 This repository contains no plugin binaries from other mods. It holds only the patch rules (`patch/`), the tools (`tools/`), FOMOD metadata (`fomod-src/`), and tests (`tests/`). You supply the original plugins; Spriggit serializes them on your machine, `tools/apply_patch.py` applies the compatibility rules, and Spriggit deserializes the final patch plugin.
 

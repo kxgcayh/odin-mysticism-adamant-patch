@@ -9,3 +9,5 @@ __pycache__/
 *.pyc
 KNOWLEDGEBASE*
 *.local.md
+NOTES.md
+docs/

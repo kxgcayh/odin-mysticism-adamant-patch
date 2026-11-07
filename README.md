@@ -21,7 +21,6 @@ Both Odin and Mysticism are comprehensive magic overhauls. Adamant is explicitly
 2. **Duplicate Spell Tomes:** Both mods add ~200 new spells, with 17 identical spells (Bound Greatsword, Bound War Axe, Bound Warhammer, Bound Mace, Command, Command Rune, Fear Rune, Flame Tempest, Hush, Mute, Panic, Rage, Slowfall, Soothe, Soul Harvest, Thundering Grasp, Viperbolt). Because Odin dynamically injects tomes at runtime via Papyrus quests, vendors end up selling duplicate competing tomes with conflicting stats and costs.
 3. **Keyword & Scaling Inconsistencies:** Odin's unique spells lack Simonrim's keyword conventions (e.g. `MAG_MagicDamageSun`, `MAG_MagicDamagePoison`, `MAG_MagicCircleSpell`), preventing them from scaling properly with Adamant's perk tree.
 
-The detailed record-by-record analysis is in [NOTES.md](NOTES.md).
 
 ## The Catch: What is Kept, Replaced, and Lost
 

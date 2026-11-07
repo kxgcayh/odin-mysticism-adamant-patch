@@ -91,4 +91,5 @@ cp README.md "$BUILD/package/README.txt"
 cp fomod-src/info.xml fomod-src/ModuleConfig.xml "$BUILD/package/fomod/"
 
 echo "packaging FOMOD distribution archive"
+cp LICENSE THIRD-PARTY-NOTICES.txt "$BUILD/package/"
 python3 -I tools/package.py "$BUILD/package" "$ZIP"

@@ -1,0 +1,18 @@
+Odin - Mysticism - Adamant Compatibility Patch - Third-party notices
+
+Odin - Mysticism - Adamant Compatibility Patch is licensed MIT (see LICENSE), which covers its scripts and documents only.
+The plugins and any other files in this package are derived from the mods below and stay under their authors' permissions.
+
+- Odin - Skyrim Magic Overhaul (https://www.nexusmods.com/skyrimspecialedition/mods/46000) by EnaiSiaion.
+  - Permissions: Modification and patching are open with credit to the creator.
+  - Credits: Mihailmods for the Daedroth, Clannfear, Xivilai, and Wraith meshes.
+- Mysticism - A Magic Overhaul (https://www.nexusmods.com/skyrimspecialedition/mods/27839) by SimonMagus.
+  - Permissions: Open permissions (*"All of my work has open permissions. You do not need to ask permission to make patches, ports, forks, or any other derivative work from my mods."*).
+  - Credits: SimonMagus & Simonrim contributors, Jay093 (poison spell meshes), Madcat221 (Holy Ground assets).
+- Adamant - A Perk Overhaul (https://www.nexusmods.com/skyrimspecialedition/mods/30191) by SimonMagus.
+  - Permissions: Open permissions for patches, forks, and derivative works.
+
+Distribution & Non-Commercial Terms
+- Free and Open: This patch is free, open-source, and granted under the same open permissions as the underlying mods.
+- No Monetization: Do not sell, charge money for, or paywall this patch or its generated files on any platform.
+- No Bundled Assets: This repository contains no bundled proprietary meshes, textures, or plugin binaries from the original mods; it only distributes compatibility delta definitions and build tooling.

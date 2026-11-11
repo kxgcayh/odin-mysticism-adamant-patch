@@ -1,6 +1,6 @@
 # Odin - Mysticism - Adamant Compatibility Patch
 
-**Version 1.0.0**
+**Version 1.1.0**
 
 An ESL-flagged (`.esp`) compatibility patch that allows **Odin - Skyrim Magic Overhaul** to run harmoniously alongside the **Mysticism - A Magic Overhaul** and **Adamant - A Perk Overhaul** ("Simonrim") suite.
 
@@ -60,6 +60,20 @@ This patch adopts the **Simonrim Authoritative Baseline + Odin Expansion** archi
 - **Light Plugin:** ESL-flagged (`[ESL]`), taking up 0 regular load order slots.
 - **Auto-Detecting FOMOD Installer:** The included installer automatically verifies `plugins.txt` and only enables the patch option if all three required plugins are active.
 
+## Optional: Dawnguard Cache Tomes Fix (Odin only)
+
+A separate installer option for any Odin user, with or without Mysticism and Adamant. Requires [SkyPatcher](https://www.nexusmods.com/skyrimspecialedition/mods/106659).
+
+Odin's `ODN_PopulateList_Script` (quest `ODN_PopulateLists`) runs once and adds Odin's tomes to vanilla leveled lists. Its Dawnguard step is `DLC1_WESC_DawnguardCacheItem.AddForm(ODN_Res_Litem_DawnguardSpells, 1, 1)`, but the script declares `ODN_Res_Litem_DawnguardSpells` as a `FormList` while Odin's plugin binds the leveled list `ODN_Res_Litem_DawnguardSpells` (`261219`). The property cannot bind, so it is `None` and the call adds nothing. The Papyrus log shows the failed binding at every new game. The Dawnguard supply caches (`DLC1_WESC_DawnguardCacheItem`, `Dawnguard.esm` `0181A5`) therefore never get Odin's 8 sun tomes: Sun Fire, Stendarr's Aura, Vampire's Bane, Sunstorm, Purifying Dawn, Radiant Beam, Sunhand and Sun Rune.
+
+The option installs one SkyPatcher line that makes the same addition, level 1 and count 1:
+
+```text
+filterByLLs=Dawnguard.esm|0181A5:addToLLs=Odin - Skyrim Magic Overhaul.esp|261219~1~1
+```
+
+No plugin, no load order slot, no conflict with other edits to that list. None of the 8 tomes is among the 17 duplicates the main patch removes, so the two options work together.
+
 ## Install
 
 Download `Odin-Mysticism-Adamant Compatibility Patch (FOMOD).zip` from the [Latest GitHub Release](https://github.com/kxgcayh/odin-mysticism-adamant-patch/releases/latest) and install it via Mod Organizer 2 or Vortex.
@@ -73,6 +87,7 @@ See [BUILDING.md](BUILDING.md) for instructions on building the plugin yourself 
 - Verified via round-trip Spriggit serialization with zero schema errors.
 - Automated test suite in `tests/test_apply_patch.py` verifies record prioritization, FormList pruning, and keyword forwarding.
 - ESL flag (`Small`) verified in binary header.
+- Dawnguard Cache Tomes Fix: script behaviour read from Odin 3.2.0's compiled `ODN_PopulateList_Script.pex` (decompiled); FormIDs and the 8 tome records read from `Odin - Skyrim Magic Overhaul.esp` and `Dawnguard.esm`; no other active plugin in the maintainer's 871-plugin load order overrides `DLC1_WESC_DawnguardCacheItem`. Not yet confirmed in game.
 
 ## Credits and Permissions
 

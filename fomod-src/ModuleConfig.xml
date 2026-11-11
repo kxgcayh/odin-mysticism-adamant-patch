@@ -47,6 +47,34 @@ Required Masters &amp; Versions:
             </plugin>
           </plugins>
         </group>
+        <group name="Odin Fixes" type="SelectAny">
+          <plugins order="Explicit">
+            <plugin name="Dawnguard Cache Tomes Fix (SkyPatcher)">
+              <description>Odin only: Mysticism and Adamant are not needed. Requires SkyPatcher.
+
+Odin's ODN_PopulateList_Script is meant to add its Dawnguard spell tome list (ODN_Res_Litem_DawnguardSpells: Sun Fire, Stendarr's Aura, Vampire's Bane, Sunstorm, Purifying Dawn, Radiant Beam, Sunhand, Sun Rune) to the Dawnguard supply caches (DLC1_WESC_DawnguardCacheItem). The script's property is declared as a FormList while Odin's plugin binds a leveled list, so the property is None and nothing is added (Papyrus log: property ODN_Res_Litem_DawnguardSpells cannot be bound).
+
+This option makes the same addition with one SkyPatcher line (level 1, count 1). No plugin, so it uses no load order slot and does not conflict with other leveled list edits.</description>
+              <files>
+                <folder source="01 Dawnguard Cache Tomes Fix" destination="" priority="0"/>
+              </files>
+              <typeDescriptor>
+                <dependencyType>
+                  <defaultType name="Optional"/>
+                  <patterns>
+                    <pattern>
+                      <dependencies operator="And">
+                        <fileDependency file="Odin - Skyrim Magic Overhaul.esp" state="Active"/>
+                        <fileDependency file="Dawnguard.esm" state="Active"/>
+                      </dependencies>
+                      <type name="Recommended"/>
+                    </pattern>
+                  </patterns>
+                </dependencyType>
+              </typeDescriptor>
+            </plugin>
+          </plugins>
+        </group>
       </optionalFileGroups>
     </installStep>
   </installSteps>

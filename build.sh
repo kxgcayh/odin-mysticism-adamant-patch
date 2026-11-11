@@ -53,6 +53,10 @@ PY
 rm -rf "$BUILD"
 mkdir -p "$BUILD/orig/odin" "$BUILD/orig/myst" "$BUILD/orig/adam" "$BUILD/yaml/patch" "$BUILD/package/00 Core" "$BUILD/package/fomod" "$DIST"
 
+# Optional SkyPatcher fix, no plugin: Odin's Dawnguard cache tomes (see README, "Dawnguard Cache Tomes Fix")
+mkdir -p "$BUILD/package/01 Dawnguard Cache Tomes Fix"
+cp -R skypatcher/SKSE "$BUILD/package/01 Dawnguard Cache Tomes Fix/"
+
 spriggit() { dotnet "$DLL" "$@" | grep -E "Unhandled|rror" || true; }
 
 echo "serializing the original input plugins"
@@ -76,8 +80,8 @@ cat > "$BUILD/package/00 Core/meta.ini" <<'EOF'
 [General]
 gameName=SkyrimSE
 modid=0
-version=1.0.0.0
-newestVersion=1.0.0.0
+version=1.1.0.0
+newestVersion=1.1.0.0
 category="27,"
 repository=Custom
 uploader=kxgcayh

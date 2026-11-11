@@ -14,6 +14,13 @@ This patch is authored and verified against the latest versions of all three mod
 
 Older versions of Adamant (v5.x and earlier) used different perk entry points and are not supported.
 
+## Requirements
+
+- [Odin - Skyrim Magic Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/46000) 3.2.0 or newer
+- [Mysticism - A Magic Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/27839) 2.5.0 or newer
+- [Adamant - A Perk Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/30191) 6.0.4 or newer
+- [SkyPatcher](https://www.nexusmods.com/skyrimspecialedition/mods/106659), only for the optional Dawnguard Cache Tomes Fix
+
 ## The Problem
 
 Both Odin and Mysticism are comprehensive magic overhauls. Adamant is explicitly designed around Mysticism, embedding custom perk hook effects directly into vanilla spell records.
@@ -91,6 +98,8 @@ See [BUILDING.md](BUILDING.md) for instructions on building the plugin yourself 
 
 ## Credits and Permissions
 
+Re-checked on 2026-11-11 against each mod's Nexus permission block and author notes: the permissions below still match.
+
 - **[Odin - Skyrim Magic Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/46000)** by **EnaiSiaion**.
   - Permissions: Modification and patching are open with credit to the creator.
   - Credits: Mihailmods for the Daedroth, Clannfear, Xivilai, and Wraith meshes.
@@ -104,6 +113,17 @@ See [BUILDING.md](BUILDING.md) for instructions on building the plugin yourself 
 - **Free and Open:** This patch is free, open-source, and granted under the same open permissions as the underlying mods.
 - **No Monetization:** Do not sell, charge money for, or paywall this patch or its generated files on any platform.
 - **No Bundled Assets:** This repository contains no bundled proprietary meshes, textures, or plugin binaries from the original mods; it only distributes compatibility delta definitions and build tooling.
+
+## More mods
+
+Other Skyrim mods by kxgcayh:
+
+- [waccf-simonrim-skypatcher-patch](https://github.com/kxgcayh/waccf-simonrim-skypatcher-patch): Restores Simonrim enchantments, charges and names, and Gourmet effects, over WACCF's SkyPatcher configs.
+- [tposc-compat-patch](https://github.com/kxgcayh/tposc-compat-patch): The People Of Skyrim Complete patch: forwards USSEP fixes and keeps its landscape and navmesh over Cutting Room Floor.
+- [beasthhbb-ibeasts-jkj-patch](https://github.com/kxgcayh/beasthhbb-ibeasts-jkj-patch): Fixes headless and dark-faced Khajiit when Project ja-Kha'jay is used with BeastHHBB and iBeasts.
+- [lawless-tamrielic-patch-update](https://github.com/kxgcayh/lawless-tamrielic-patch-update): Updates the Lawless Bandit War plugins for Tamrielic Distribution 2.0 and later.
+- [UntarnishedUI-QuickLootIE-Patch](https://github.com/kxgcayh/UntarnishedUI-QuickLootIE-Patch): Untarnished UI skins for QuickLoot IE 4.x.
+- [WhereWasI](https://github.com/kxgcayh/WhereWasI): SKSE plugin: a recap on save load after a break.
 
 ## License
 

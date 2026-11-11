@@ -1,0 +1,20 @@
+name = "Odin-Mysticism-Adamant-Compatibility-Patch"
+display_name = "Odin - Mysticism - Adamant Compatibility Patch"
+version = "1.1.0"
+description = "Lets Odin - Skyrim Magic Overhaul run with Mysticism and Adamant (Simonrim), plus an optional SkyPatcher fix that adds Odin's sun tomes to the Dawnguard caches. ESL-flagged."
+
+# archive path = source path (relative to this folder); build.sh writes dist/ and build/
+# The FOMOD is laid out flat (fomod/ plus one folder per option) so MO2 runs the installer on the release zip itself.
+[files]
+"fomod/info.xml" = "fomod-src/info.xml"
+"fomod/ModuleConfig.xml" = "fomod-src/ModuleConfig.xml"
+"00 Core/Odin-Adamant-Mysticism-Patch.esp" = "dist/Odin-Adamant-Mysticism-Patch.esp"
+"01 Dawnguard Cache Tomes Fix/SKSE/Plugins/SkyPatcher/leveledList/Odin - Dawnguard Cache Tomes Fix/ODN_DawnguardCacheTomes.ini" = "skypatcher/SKSE/Plugins/SkyPatcher/leveledList/Odin - Dawnguard Cache Tomes Fix/ODN_DawnguardCacheTomes.ini"
+"LICENSE" = "LICENSE"
+"THIRD-PARTY-NOTICES.txt" = "THIRD-PARTY-NOTICES.txt"
+
+[nexus]
+mod_category = 84  # Nexus mod category: Patches; written as category= in the github .meta
+
+[github]
+repo = "kxgcayh/odin-mysticism-adamant-patch"
